@@ -1,4 +1,4 @@
-import React, { useState, useRef, useEffect } from 'react';
+﻿import React, { useState, useRef, useEffect } from 'react';
 import { motion, AnimatePresence } from 'motion/react';
 import { Heart, Music, Volume2, VolumeX } from 'lucide-react';
 import FloatingHearts from './components/FloatingHearts';
@@ -10,7 +10,7 @@ import LuckyWheel from './components/LuckyWheel';
 // 🎵 这里放回了网络链接模式
 // 默认填入了一首非常浪漫的钢琴曲（Pixabay免版权），确保100%能播放
 // 如果你之后有了 Jar of Love 的直链（比如来自 Dropbox/Google Drive），直接替换下面这个引号里的地址即可
-const MUSIC_URL = "/bgm.mp3";
+const MUSIC_URL = `${import.meta.env.BASE_URL}bgm.mp3`;
 const MUSIC_TITLE = "Romantic Moment (For My Love)";
 
 const HeroSection = () => {
